@@ -7,26 +7,39 @@
   <title>Dr. Subarsha Banerjee</title>
 
   <style>
-    .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background-color: var(--bg-color);
-  border-bottom: 1px solid #ccc;
-  padding: 0.5rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
+    :root {
+      --bg-color: white;
+      --text-color: #222;
+    }
+
+    body.dark-mode {
+      --bg-color: #1e1e1e;
+      --text-color: #eee;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
 
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #222;
+      background-color: var(--bg-color);
+      color: var(--text-color);
       max-width: 900px;
       margin: 2rem auto;
       padding: 2rem;
       border-radius: 10px;
-      background: white;
+      background: var(--bg-color);
       box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background-color: var(--bg-color);
+      border-bottom: 1px solid #ccc;
+      padding: 0.5rem 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     }
 
     nav {
@@ -87,6 +100,14 @@
       text-decoration: underline;
     }
 
+    #theme-toggle {
+      background: none;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
     @media (max-width: 600px) {
       img {
         float: none;
@@ -105,17 +126,17 @@
 <body>
 
   <header class="site-header">
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="education.html">Education</a> |
-    <a href="publications.html">Publications</a> |
-    <a href="awards.html">Awards</a> |
-    <a href="gallery.html">Gallery</a> |
-    <a href="contact.html">Contact Me</a>
-    <button id="theme-toggle" title="Toggle dark mode">🌙</button>
-  </nav>
-</header>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="education.html">Education</a> |
+      <a href="publications.html">Publications</a> |
+      <a href="awards.html">Awards</a> |
+      <a href="gallery.html">Gallery</a> |
+      <a href="contact.html">Contact Me</a>
+      <button id="theme-toggle" title="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
 
   <hr>
 
@@ -130,38 +151,36 @@
   <p>Dr. Banerjee is actively engaged in both research and teaching, and is committed to guiding students in advanced mathematical thinking and problem-solving.</p>
 
   <p><strong>Research Interests:</strong> Graph Theory, Combinatorics, Spectral Graph Theory</p>
+
   <a href="Subarsha_Banerjee_CV.pdf" download style="display:inline-block; background:#005f99; color:white; padding:10px 20px; border-radius:5px; text-decoration:none;">
     📄 Download My CV
   </a>
-</p>
-
 
   <h2>Contact</h2>
-<p>📧 <strong>Email:</strong> <a href="mailto:subarsha.banerjee@jisuniversity.ac.in">subarsha.banerjee@jisuniversity.ac.in</a></p>
-<p>📞 <strong>Phone:</strong> +91-7595939096</p>
-<p>🎓 <strong>Google Scholar:</strong> <a href="https://scholar.google.co.in/citations?user=mnZUwY8AAAAJ&hl=en&oi=ao" target="_blank">View Profile</a></p>
-<p>🧬 <strong>ORCID:</strong> <a href="https://orcid.org/my-orcid?orcid=0000-0002-7029-7650" target="_blank">0000-0002-7029-7650</a></p>
-<p>🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/subarsha-banerjee-a8a549235/" target="_blank">LinkedIn Profile</a></p>
+  <p>📧 <strong>Email:</strong> <a href="mailto:subarsha.banerjee@jisuniversity.ac.in">subarsha.banerjee@jisuniversity.ac.in</a></p>
+  <p>📞 <strong>Phone:</strong> +91-7595939096</p>
+  <p>🎓 <strong>Google Scholar:</strong> <a href="https://scholar.google.co.in/citations?user=mnZUwY8AAAAJ&hl=en&oi=ao" target="_blank">View Profile</a></p>
+  <p>🧬 <strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-7029-7650" target="_blank">0000-0002-7029-7650</a></p>
+  <p>🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/subarsha-banerjee-a8a549235/" target="_blank">LinkedIn Profile</a></p>
 
   <script>
-  const toggle = document.getElementById('theme-toggle');
-  const body = document.body;
+    const toggle = document.getElementById('theme-toggle');
+    const body = document.body;
 
-  // Load saved preference
-  if (localStorage.getItem('theme') === 'dark') {
-    body.classList.add('dark-mode');
-    toggle.textContent = '☀️';
-  }
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark-mode');
+      toggle.textContent = '☀️';
+    }
 
-  toggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    const isDark = body.classList.contains('dark-mode');
-    toggle.textContent = isDark ? '☀️' : '🌙';
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  });
-</script>
+    toggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      const isDark = body.classList.contains('dark-mode');
+      toggle.textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
 
 </body>
-  
 </html>
+
 
