@@ -11,36 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-    }
-  </style>
-</head>
-<body class="bg-gray-100 text-gray-800">
-
-  <!-- Header -->
-  <header class="bg-blue-900 text-white py-8 shadow-lg text-center">
-    <h1 class="text-3xl md:text-4xl font-bold">Dr. Subarsha Banerjee</h1>
-    <p class="mt-2 text-lg md:text-xl">Assistant Professor, Department of Mathematics, JIS University</p>
-  </header>
-
-  <!-- Main Content -->
-  <main class="max-w-3xl mx-auto my-10 bg-white p-6 md:p-10 rounded-2xl shadow-lg animate-fadeIn">
-
-    <h2 class="text-2xl font-bold text-blue-800 mb-4 border-b-2 border-blue-200 pb-2">About Me</h2>
-
-    <p class="mb-4 leading-relaxed">I hail from <strong class="text-gray-900">Barrackpore</strong> in West Bengal, which has great historical significance.</p>
-    <p class="mb-4 leading-relaxed">I was born on <strong class="text-gray-900">15th April</strong>, which is celebrated as <em class="text-gray-600">Pahela Baisakh</em> in West Bengal — the Bengali New Year — and marked with great pomp and show in many Indian states.</p>
-    <p class="mb-4 leading-relaxed">After completing my schooling in Barrackpore, I pursued my <strong class="text-gray-900">Bachelor of Science in Mathematics</strong> from <strong class="text-gray-900">St. Xavier's College, Kolkata</strong>, followed by a <strong class="text-gray-900">Master of Science in Mathematics</strong> from the <strong class="text-gray-900">University of Calcutta</strong>.</p>
-    <p class="mb-4 leading-relaxed">In <strong class="text-gray-900">2015</strong>, I was awarded the <strong class="text-gray-900">Research Award in Mathematics</strong> by the <em class="text-gray-600">National Board for Higher Mathematics (NBHM)</em>. I also secured the <strong class="text-gray-900">Junior Research Fellowship</strong> from the <em class="text-gray-600">Council of Scientific and Industrial Research (CSIR)</em>.</p>
-    <p class="mb-4 leading-relaxed">I completed my <strong class="text-gray-900">Ph.D. in Algebraic Graph Theory</strong> from the <em class="text-gray-600">Department of Pure Mathematics, University of Calcutta</em> in <strong class="text-gray-900">2022</strong>. During my doctoral research, I published <strong class="text-gray-900">16 research papers</strong>, of which <strong class="text-gray-900">12 are single-authored</strong>.</p>
-    <p class="mb-4 leading-relaxed">Currently, I am working as an <strong class="text-gray-900">Assistant Professor</strong> in the <strong class="text-gray-900">Department of Mathematics, JIS University</strong>. Recently, I received the prestigious <strong class="text-gray-900">JIS Samman Award</strong> for the highest number of publications in an academic year.</p>
-    <p class="mb-4 leading-relaxed">My research interests include <strong class="text-gray-900">Combinatorics</strong>, <strong class="text-gray-900">Matrix Theory</strong>, and <strong class="text-gray-900">Algebraic Graph Theory</strong>.</p>
-
-  </main>
-
-  <!-- Small Animation Utility -->
-  <style>
+    body { font-family: 'Roboto', sans-serif; }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -49,6 +20,58 @@
       animation: fadeIn 0.8s ease;
     }
   </style>
+</head>
+<body class="bg-gradient-to-br from-gray-100 to-blue-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-10 shadow-lg text-center">
+    <h1 class="text-4xl font-extrabold">Dr. Subarsha Banerjee</h1>
+    <p class="mt-3 text-lg md:text-xl opacity-90">Assistant Professor, Department of Mathematics, JIS University</p>
+  </header>
+
+  <!-- Sticky Navbar -->
+  <nav class="sticky top-0 z-50 bg-blue-800 shadow-md">
+    <div class="max-w-4xl mx-auto flex justify-center space-x-6 py-3">
+      <a href="#about" class="text-white font-medium px-3 py-2 rounded-lg hover:bg-blue-600 transition">About</a>
+      <a href="#research" class="text-white font-medium px-3 py-2 rounded-lg hover:bg-blue-600 transition">Research</a>
+      <a href="#contact" class="text-white font-medium px-3 py-2 rounded-lg hover:bg-blue-600 transition">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="max-w-3xl mx-auto my-10 bg-white p-6 md:p-10 rounded-2xl shadow-xl animate-fadeIn">
+
+    <!-- About -->
+    <section id="about">
+      <h2 class="text-3xl font-bold text-blue-900 mb-4 border-b-4 border-blue-400 pb-2">About Me</h2>
+      <p class="mb-4 leading-relaxed">I hail from <strong class="text-gray-900">Barrackpore</strong> in West Bengal, which has great historical significance.</p>
+      <p class="mb-4 leading-relaxed">I was born on <strong class="text-gray-900">15th April</strong>, which is celebrated as <em class="text-blue-700">Pahela Baisakh</em> in West Bengal — the Bengali New Year — and marked with great pomp and show in many Indian states.</p>
+      <p class="mb-4 leading-relaxed">After completing my schooling in Barrackpore, I pursued my <strong class="text-gray-900">Bachelor of Science in Mathematics</strong> from <strong class="text-gray-900">St. Xavier's College, Kolkata</strong>, followed by a <strong class="text-gray-900">Master of Science in Mathematics</strong> from the <strong class="text-gray-900">University of Calcutta</strong>.</p>
+      <p class="mb-4 leading-relaxed">In <strong class="text-gray-900">2015</strong>, I was awarded the <strong class="text-gray-900">Research Award in Mathematics</strong> by the <em class="text-blue-700">National Board for Higher Mathematics (NBHM)</em>. I also secured the <strong class="text-gray-900">Junior Research Fellowship</strong> from the <em class="text-blue-700">Council of Scientific and Industrial Research (CSIR)</em>.</p>
+      <p class="mb-4 leading-relaxed">I completed my <strong class="text-gray-900">Ph.D. in Algebraic Graph Theory</strong> from the <em class="text-blue-700">Department of Pure Mathematics, University of Calcutta</em> in <strong class="text-gray-900">2022</strong>. During my doctoral research, I published <strong class="text-gray-900">16 research papers</strong>, of which <strong class="text-gray-900">12 are single-authored</strong>.</p>
+      <p class="mb-4 leading-relaxed">Currently, I am working as an <strong class="text-gray-900">Assistant Professor</strong> in the <strong class="text-gray-900">Department of Mathematics, JIS University</strong>. Recently, I received the prestigious <strong class="text-blue-700">JIS Samman Award</strong> for the highest number of publications in an academic year.</p>
+      <p class="mb-4 leading-relaxed">My research interests include <strong class="text-blue-700">Combinatorics</strong>, <strong class="text-blue-700">Matrix Theory</strong>, and <strong class="text-blue-700">Algebraic Graph Theory</strong>.</p>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="mt-12 bg-gradient-to-r from-blue-50 to-white p-6 rounded-xl shadow-inner">
+      <h2 class="text-3xl font-bold text-blue-900 mb-4 border-b-4 border-blue-400 pb-2">Research</h2>
+      <p class="mb-4 leading-relaxed">During my Ph.D. and academic career, I have published <strong class="text-gray-900">16 research papers</strong>, including <strong class="text-gray-900">12 single-authored</strong> works. My research spans across:</p>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li><span class="text-blue-800 font-semibold">Combinatorics</span> – exploring structures and counting problems</li>
+        <li><span class="text-blue-800 font-semibold">Matrix Theory</span> – linear algebra and its applications</li>
+        <li><span class="text-blue-800 font-semibold">Algebraic Graph Theory</span> – spectral analysis of graphs</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-12 bg-gradient-to-r from-white to-blue-50 p-6 rounded-xl shadow-inner">
+      <h2 class="text-3xl font-bold text-blue-900 mb-4 border-b-4 border-blue-400 pb-2">Contact</h2>
+      <p class="mb-2">📧 Email: <a href="mailto:subarsha.banerjee@jisuniversity.ac.in" class="text-blue-700 font-semibold hover:underline">subarsha.banerjee@jisuniversity.ac.in</a></p>
+      <p>🏛️ Office: Department of Mathematics, JIS University</p>
+    </section>
+
+  </main>
 
 </body>
 </html>
