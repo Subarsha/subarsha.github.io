@@ -5,113 +5,50 @@
   <title>About Dr. Subarsha Banerjee</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="About Dr. Subarsha Banerjee, Assistant Professor in Mathematics at JIS University. Researcher in graph theory, combinatorics, and spectral theory.">
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
   <style>
     body {
-      margin: 0;
       font-family: 'Roboto', sans-serif;
-      background: #e9ecef;
-      color: #333;
     }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
 
-    header {
-      background: #003366;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
+  <!-- Header -->
+  <header class="bg-blue-900 text-white py-8 shadow-lg text-center">
+    <h1 class="text-3xl md:text-4xl font-bold">Dr. Subarsha Banerjee</h1>
+    <p class="mt-2 text-lg md:text-xl">Assistant Professor, Department of Mathematics, JIS University</p>
+  </header>
 
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
+  <!-- Main Content -->
+  <main class="max-w-3xl mx-auto my-10 bg-white p-6 md:p-10 rounded-2xl shadow-lg animate-fadeIn">
 
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      animation: fadeIn 0.8s ease;
-    }
+    <h2 class="text-2xl font-bold text-blue-800 mb-4 border-b-2 border-blue-200 pb-2">About Me</h2>
 
-    nav {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
+    <p class="mb-4 leading-relaxed">I hail from <strong class="text-gray-900">Barrackpore</strong> in West Bengal, which has great historical significance.</p>
+    <p class="mb-4 leading-relaxed">I was born on <strong class="text-gray-900">15th April</strong>, which is celebrated as <em class="text-gray-600">Pahela Baisakh</em> in West Bengal — the Bengali New Year — and marked with great pomp and show in many Indian states.</p>
+    <p class="mb-4 leading-relaxed">After completing my schooling in Barrackpore, I pursued my <strong class="text-gray-900">Bachelor of Science in Mathematics</strong> from <strong class="text-gray-900">St. Xavier's College, Kolkata</strong>, followed by a <strong class="text-gray-900">Master of Science in Mathematics</strong> from the <strong class="text-gray-900">University of Calcutta</strong>.</p>
+    <p class="mb-4 leading-relaxed">In <strong class="text-gray-900">2015</strong>, I was awarded the <strong class="text-gray-900">Research Award in Mathematics</strong> by the <em class="text-gray-600">National Board for Higher Mathematics (NBHM)</em>. I also secured the <strong class="text-gray-900">Junior Research Fellowship</strong> from the <em class="text-gray-600">Council of Scientific and Industrial Research (CSIR)</em>.</p>
+    <p class="mb-4 leading-relaxed">I completed my <strong class="text-gray-900">Ph.D. in Algebraic Graph Theory</strong> from the <em class="text-gray-600">Department of Pure Mathematics, University of Calcutta</em> in <strong class="text-gray-900">2022</strong>. During my doctoral research, I published <strong class="text-gray-900">16 research papers</strong>, of which <strong class="text-gray-900">12 are single-authored</strong>.</p>
+    <p class="mb-4 leading-relaxed">Currently, I am working as an <strong class="text-gray-900">Assistant Professor</strong> in the <strong class="text-gray-900">Department of Mathematics, JIS University</strong>. Recently, I received the prestigious <strong class="text-gray-900">JIS Samman Award</strong> for the highest number of publications in an academic year.</p>
+    <p class="mb-4 leading-relaxed">My research interests include <strong class="text-gray-900">Combinatorics</strong>, <strong class="text-gray-900">Matrix Theory</strong>, and <strong class="text-gray-900">Algebraic Graph Theory</strong>.</p>
 
-    nav a {
-      text-decoration: none;
-      color: #007acc;
-      margin: 0 1rem;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
+  </main>
 
-    nav a:hover {
-      color: #005f99;
-      text-decoration: underline;
-    }
-
-    p {
-      line-height: 1.8;
-      margin-bottom: 1rem;
-    }
-
-    strong {
-      color: #222;
-    }
-
-    em {
-      color: #555;
-    }
-
-    hr {
-      border: none;
-      border-top: 1px solid #ccc;
-      margin: 2rem 0;
-    }
-
+  <!-- Small Animation Utility -->
+  <style>
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
-    @media (max-width: 600px) {
-      main {
-        padding: 1rem;
-      }
-
-      header h1 {
-        font-size: 1.5rem;
-      }
+    .animate-fadeIn {
+      animation: fadeIn 0.8s ease;
     }
   </style>
-</head>
-<body>
-
-  <header>
-    <h1>Dr. Subarsha Banerjee</h1>
-    <p>Assistant Professor, Department of Mathematics, JIS University</p>
-  </header>
-
-  <main>
-
-    <h2>About Me</h2>
-
-    <p>I hail from <strong>Barrackpore</strong> in West Bengal, which has great historical significance.</p>
-    <p>I was born on <strong>15th April</strong>, which is celebrated as <em>Pahela Baisakh</em> in West Bengal — the Bengali New Year — and marked with great pomp and show in many Indian states.</p>
-    <p>After completing my schooling in Barrackpore, I pursued my <strong>Bachelor of Science in Mathematics</strong> from <strong>St. Xavier's College, Kolkata</strong>, followed by a <strong>Master of Science in Mathematics</strong> from the <strong>University of Calcutta</strong>.</p>
-    <p>In <strong>2015</strong>, I was awarded the <strong>Research Award in Mathematics</strong> by the <em>National Board for Higher Mathematics (NBHM)</em>. I also secured the <strong>Junior Research Fellowship</strong> from the <em>Council of Scientific and Industrial Research (CSIR)</em>.</p>
-    <p>I completed my <strong>Ph.D. in Algebraic Graph Theory</strong> from the <em>Department of Pure Mathematics, University of Calcutta</em> in <strong>2022</strong>. During my doctoral research, I published <strong>16 research papers</strong>, of which <strong>12 are single-authored</strong>.</p>
-    <p>Currently, I am working as an <strong>Assistant Professor</strong> in the <strong>Department of Mathematics, JIS University</strong>. Recently, I received the prestigious <strong>JIS Samman Award</strong> for the highest number of publications in an academic year.</p>
-    <p>My research interests include <strong>Combinatorics</strong>, <strong>Matrix Theory</strong>, and <strong>Algebraic Graph Theory</strong>.</p>
-  </main>
 
 </body>
 </html>
